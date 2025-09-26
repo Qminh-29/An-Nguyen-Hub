@@ -3176,7 +3176,7 @@ end
 
     function fastpos(Pos)
         Distance = (Pos.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
-        Speed = 1000
+        Speed = 999999
         game:GetService("TweenService"):Create(
             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
             TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear),
@@ -3186,7 +3186,7 @@ end
 
     function slowpos(Pos)
         Distance = (Pos.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
-        Speed = 150
+        Speed = 999999
         game:GetService("TweenService"):Create(
             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
             TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear),
@@ -5390,7 +5390,7 @@ spawn(function()
                                 MonFarm = v.Name
                             end
                         until not _G.AutoFarmFruits or not MasteryType == 'Farm Level Mastery No Quest' or not v.Parent or v.Humanoid.Health == 0 or not _G.selectFruitFarm == 'Farm Level Mastery No Quest'
-                         bringmob = false
+                         bringmob = true
                         _G.UseSkill = false
                     end
                 end
@@ -5434,7 +5434,7 @@ spawn(function()
                                         MonFarm = v.Name
                                     end
                                 until not _G.AutoFarmFruits or not MasteryType == 'Farm Level Mastery' or not v.Parent or v.Humanoid.Health == 0 or not _G.selectFruitFarm == 'Farm Level Mastery'
-                                bringmob = false
+                                bringmob = true
                                 _G.UseSkill = false
                             end
                         end
@@ -5472,7 +5472,7 @@ spawn(function()
                                 MonFarm = v.Name
                             end
                         until not _G.AutoFarmFruits or not MasteryType == 'Farm Bone Mastery' or not v.Parent or v.Humanoid.Health == 0 or not _G.selectFruitFarm == 'Farm Bone Mastery'
-                        bringmob = false
+                        bringmob = true
                         _G.UseSkill = false
                     end
                 end
@@ -5519,7 +5519,7 @@ spawn(function()
                                 MonFarm = v.Name
                             end
                         until not _G.AutoFarmFruits or not MasteryType == 'Farm Cake Mastery' or not v.Parent or v.Humanoid.Health == 0 or not _G.selectFruitFarm == 'Farm Cake Mastery'
-                        bringmob = false
+                        bringmob = true
                         _G.UseSkill = false
                     end
                 end
@@ -9105,7 +9105,7 @@ function StartBoatMovement()
     boatMovementConnection = RunService.Heartbeat:Connect(function()
         local direction = Vector3.new(0, 0, 1000)
         local distance = 500
-        local speed = 186
+        local speed = 999999
         MoveBoat(direction, distance, speed)
     end)
 end
