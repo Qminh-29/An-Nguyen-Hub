@@ -345,7 +345,7 @@ MatsuneA1["5"] = Instance.new("UIStroke", MatsuneA1["4"]);
 MatsuneA1["5"]["Color"] = Color3.fromRGB(255, 0, 0);
 
 MatsuneA1["6"] = Instance.new("UIStroke", MatsuneA1["2"]);
-MatsuneA1["6"]["Color"] = Color3.fromRGB(169, 238, 8);
+MatsuneA1["6"]["Color"] = Color3.fromRGB(135, 206, 235);
 
 local function StopTween()
     if _G.StopTween then
@@ -3415,12 +3415,12 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 ImageButton.Parent = ScreenGui
 ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderColor3 = Color3.fromRGB(135, 206, 235)
 ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.120833337 - 0.10, 0, 0.0952890813 + 0.01, 0)
 ImageButton.Size = UDim2.new(0, 40, 0, 40)
 ImageButton.Draggable = true
-ImageButton.Image = "rbxassetid://100666805146072"
+ImageButton.Image = "rbxassetid://108644522770850"
 
 UICorner.CornerRadius = UDim.new(1, 0)
 UICorner.Parent = ImageButton
@@ -3629,7 +3629,7 @@ local Disc_Title = Instance.new("TextLabel")
 Discord.Name = "Discord"
 Discord.Parent = Main
 Discord.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Discord.BackgroundTransparency = 1 -- Làm cho nền trong suốt
+Discord.BackgroundTransparency = 100 -- Làm cho nền trong suốt
 Discord.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Discord.BorderSizePixel = 0
 Discord.Position = UDim2.new(0, 430, 0, 16)
