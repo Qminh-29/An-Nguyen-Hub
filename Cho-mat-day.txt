@@ -1,4 +1,4 @@
--- discord.gg/AbYeHux9
+-- discord.gg/FmB5RCux
 ----- đoạn đầu
 
 
@@ -3381,11 +3381,11 @@ end
 
 local library = {}
 
-_G.Color = Color3.fromRGB(154, 240, 17) 
-_G.imageLogo = "rbxassetid://12940626152"
-_G.Logo = "rbxassetid://12940626152"
-_G.NameHub = "Made By Dragon Toro" -- ชื่อ Hub
-_G.Title = "Matsune Hub Script blox fruits" -- คำอธิบาย
+_G.Color = Color3.fromRGB(135, 206, 235) 
+_G.imageLogo = "rbxassetid://108644522770850"
+_G.Logo = "rbxassetid://108644522770850"
+_G.NameHub = "Made By Qminh" -- ชื่อ Hub
+_G.Title = "Ân Nguyễn Hub-blox fruits" -- คำอธิบาย
 -----------------------------------------------------------------
 
 local isUIEnabled = true 
@@ -3682,7 +3682,7 @@ end)
 
 -- Click event: copy Discord link
 Discord.MouseButton1Click:Connect(function()
-    (setclipboard or toclipboard)("https://discord.gg/SpJQ3XVEJ8")
+    (setclipboard or toclipboard)("https://discord.gg/FmB5RCux")
     wait(.1)
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "Discord",
@@ -4137,12 +4137,12 @@ UICorner.Parent = ImageButton
 
 				Button_2.Name = "Button"
 				Button_2.Parent = SectionContainer
-				Button_2.BackgroundColor3 = Color3.fromRGB(154, 240, 17)
+				Button_2.BackgroundColor3 = Color3.fromRGB(135, 206, 235)
 				Button_2.Size = UDim2.new(0.975000024, 0, 0, 25)
 				Button_2.ZIndex = 16
 
 				if default then
-					Button_2.BackgroundColor3 = Color3.fromRGB(154, 240, 17)
+					Button_2.BackgroundColor3 = Color3.fromRGB(135, 206, 235)
 				else
 					Button_2.BackgroundColor3 = _G.Color
 				end
@@ -4188,7 +4188,7 @@ UICorner.Parent = ImageButton
 						Button_2,
 						TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 						{
-							BackgroundColor3 = state and _G.Color or Color3.fromRGB(154, 240, 17)
+							BackgroundColor3 = state and _G.Color or Color3.fromRGB(135, 206, 235)
 						}
 					):Play()
 					callback(default)
@@ -4199,7 +4199,7 @@ UICorner.Parent = ImageButton
 						Button_2,
 						TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 						{
-							BackgroundColor3 = state and Color3.fromRGB(154, 240, 17) or _G.Color
+							BackgroundColor3 = state and Color3.fromRGB(135, 206, 235) or _G.Color
 						}
 					):Play()
 					callback(state)
